@@ -100,7 +100,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="2IC-3j-o0d" kind="relationship" relationship="rootViewController" id="097-et-vrg"/>
+                        <segue destination="09c-5R-lWE" kind="relationship" relationship="rootViewController" id="1UC-fm-XDh"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGh-fU-iDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -120,7 +120,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w2M-Id-a1A" customClass="MagneticView" customModule="Magnetic">
-                                <rect key="frame" x="220" y="70" width="300" height="300"/>
+                                <rect key="frame" x="220" y="114" width="300" height="300"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjY-cf-TUs">
                                         <rect key="frame" x="82.5" y="120.5" width="135.5" height="59.5"/>
@@ -139,7 +139,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyJ-Ez-cHf" customClass="MagneticView" customModule="Magnetic">
-                                <rect key="frame" x="570" y="70" width="300" height="300"/>
+                                <rect key="frame" x="570" y="114" width="300" height="300"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVo-vR-Goq">
                                         <rect key="frame" x="77.5" y="120.5" width="145.5" height="59.5"/>
@@ -158,7 +158,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4FQ-IV-cur" customClass="MagneticView" customModule="Magnetic">
-                                <rect key="frame" x="220" y="430" width="300" height="300"/>
+                                <rect key="frame" x="220" y="474" width="300" height="300"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrR-oQ-3KC">
                                         <rect key="frame" x="77.5" y="120.5" width="145.5" height="59.5"/>
@@ -177,7 +177,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XP5-A4-9A7" customClass="MagneticView" customModule="Magnetic">
-                                <rect key="frame" x="570" y="430" width="300" height="300"/>
+                                <rect key="frame" x="570" y="474" width="300" height="300"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6E-5a-K3R">
                                         <rect key="frame" x="101.5" y="120.5" width="97.5" height="59.5"/>
@@ -219,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZZ-oO-8vp" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="368" y="-116"/>
+            <point key="canvasLocation" x="-705" y="367"/>
         </scene>
         <!--Glance View Controller-->
         <scene sceneID="9XT-6Y-LHV">
@@ -234,10 +234,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Oz-VM-MMO">
-                                <rect key="frame" x="50" y="114" width="924" height="604"/>
+                                <rect key="frame" x="50" y="70" width="924" height="648"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pge-RY-cnZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="924" height="604"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="924" height="648"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star_Group" translatesAutoresizingMaskIntoConstraints="NO" id="dxj-oA-qEW">
                                         <rect key="frame" x="750" y="5" width="174" height="30"/>
@@ -245,15 +245,27 @@
                                             <constraint firstAttribute="height" constant="30" id="Aof-Fb-grq"/>
                                         </constraints>
                                     </imageView>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3m-a7-DDF">
+                                        <rect key="frame" x="0.0" y="0.0" width="924" height="648"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wej-rF-2dI">
+                                            <rect key="frame" x="0.0" y="0.0" width="924" height="648"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Pge-RY-cnZ" secondAttribute="bottom" id="06Y-A9-25h"/>
+                                    <constraint firstAttribute="bottom" secondItem="o3m-a7-DDF" secondAttribute="bottom" id="8nc-9S-a9w"/>
                                     <constraint firstAttribute="trailing" secondItem="Pge-RY-cnZ" secondAttribute="trailing" id="Blr-Jc-I2H"/>
+                                    <constraint firstItem="o3m-a7-DDF" firstAttribute="top" secondItem="7Oz-VM-MMO" secondAttribute="top" id="bPu-fG-lBu"/>
+                                    <constraint firstAttribute="trailing" secondItem="o3m-a7-DDF" secondAttribute="trailing" id="f8b-Px-G6N"/>
                                     <constraint firstItem="Pge-RY-cnZ" firstAttribute="top" secondItem="7Oz-VM-MMO" secondAttribute="top" id="gSr-4p-Wm5"/>
                                     <constraint firstAttribute="trailing" secondItem="dxj-oA-qEW" secondAttribute="trailing" id="hNN-DI-y9J"/>
                                     <constraint firstItem="dxj-oA-qEW" firstAttribute="top" secondItem="7Oz-VM-MMO" secondAttribute="top" constant="5" id="tfF-Ex-QlS"/>
                                     <constraint firstItem="Pge-RY-cnZ" firstAttribute="leading" secondItem="7Oz-VM-MMO" secondAttribute="leading" id="uaM-zi-OD1"/>
+                                    <constraint firstItem="o3m-a7-DDF" firstAttribute="leading" secondItem="7Oz-VM-MMO" secondAttribute="leading" id="wZj-Vn-9HR"/>
                                     <constraint firstItem="dxj-oA-qEW" firstAttribute="leading" secondItem="7Oz-VM-MMO" secondAttribute="leading" constant="750" id="wdf-bZ-wR0"/>
                                 </constraints>
                             </view>
@@ -268,6 +280,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ndB-Qv-igi"/>
                     <connections>
+                        <outlet property="glanceBlurView" destination="o3m-a7-DDF" id="GEU-DL-gX7"/>
                         <outlet property="glanceImageView" destination="Pge-RY-cnZ" id="TLc-J8-Dyh"/>
                         <outlet property="glanceView" destination="7Oz-VM-MMO" id="8Rp-q7-ziC"/>
                         <outlet property="ratingImageView" destination="dxj-oA-qEW" id="Iae-vM-oip"/>
@@ -275,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDy-2X-ojv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="543" y="-1179"/>
+            <point key="canvasLocation" x="1148" y="-116"/>
         </scene>
     </scenes>
     <resources>

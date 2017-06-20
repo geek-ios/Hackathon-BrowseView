@@ -35,6 +35,7 @@ class GlanceViewController: UIViewController {
   var imageIndex = 0
   let animationDuration: TimeInterval = 0.25
   let switchingInterval: TimeInterval = 3
+  var singleTapGesture: UITapGestureRecognizer?
   
 
   
@@ -42,6 +43,7 @@ class GlanceViewController: UIViewController {
   @IBOutlet weak var glanceImageView: UIImageView!
   @IBOutlet weak var glanceView: UIView!
   @IBOutlet weak var ratingImageView: UIImageView!
+  @IBOutlet weak var glanceBlurView: UIVisualEffectView!
   
   
   override func viewDidLoad() {
@@ -60,6 +62,7 @@ class GlanceViewController: UIViewController {
     //set up Genre Group
     setUpGenreGroupImage()
     ratingImageView.isHidden = true
+    glanceBlurView.isHidden = true
   }
 
   
@@ -69,9 +72,11 @@ class GlanceViewController: UIViewController {
     let actionView = setUpOverlayView(frame: CGRect(x:0,y:0, width: 300, height: 320))
     actionView.tag = 1001
     
-    let singleTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.actionTapped))
-    singleTapGesture.numberOfTapsRequired = 1
-    actionView.addGestureRecognizer(singleTapGesture)
+    singleTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.actionTapped))
+    singleTapGesture?.numberOfTapsRequired = 1
+    if let singleTapGesture = singleTapGesture{
+      actionView.addGestureRecognizer(singleTapGesture)
+    }
     let dramaView = setUpOverlayView(frame: CGRect(x: (actionView.frame.origin.x + actionView.frame.size.width) + 10, y:0, width: 300, height: 320))
     dramaView.tag = 1002
     let comedyView = setUpOverlayView(frame: CGRect(x: (dramaView.frame.origin.x + dramaView.frame.size.width) + 10, y:0, width: 300, height: 320))
@@ -106,11 +111,12 @@ class GlanceViewController: UIViewController {
     glanceImageView.layer.add(transition, forKey: kCATransition)
     if animationImagesArray.count > imageIndex{
       glanceImageView.image = animationImagesArray[imageIndex]
-      if imageIndex == 2 {
-        ratingImageView.isHidden = false
-      }else {
-        ratingImageView.isHidden = true
-      }
+//      if imageIndex == 2 {
+//        ratingImageView.isHidden = false
+//        singleTapGesture =
+//      }else {
+//        ratingImageView.isHidden = true
+//      }
     }
     CATransaction.commit()
   }
