@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2IC-3j-o0d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xSf-sn-vyh">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -91,10 +91,26 @@
             </objects>
             <point key="canvasLocation" x="139" y="571"/>
         </scene>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="TMv-fA-Tdb">
+            <objects>
+                <navigationController id="xSf-sn-vyh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tze-Em-2fN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2IC-3j-o0d" kind="relationship" relationship="rootViewController" id="097-et-vrg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kGh-fU-iDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-288" y="-782"/>
+        </scene>
+        <!--Home View Controller-->
         <scene sceneID="GKl-HO-NH8">
             <objects>
-                <viewController id="2IC-3j-o0d" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2IC-3j-o0d" customClass="HomeViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iTm-GN-vf8"/>
                         <viewControllerLayoutGuide type="bottom" id="zkb-bl-2CL"/>
@@ -193,6 +209,7 @@
                             <constraint firstItem="XP5-A4-9A7" firstAttribute="top" secondItem="jyJ-Ez-cHf" secondAttribute="bottom" constant="60" id="v6A-wY-0Es"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="vmL-26-gHc"/>
                     <connections>
                         <outlet property="magneticView" destination="w2M-Id-a1A" id="Pbc-lB-Ugs"/>
                         <outlet property="magneticView2" destination="jyJ-Ez-cHf" id="9io-ey-L0K"/>
@@ -202,7 +219,66 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZZ-oO-8vp" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127.73437499999999" y="-163.28125"/>
+            <point key="canvasLocation" x="368" y="-116"/>
+        </scene>
+        <!--Glance View Controller-->
+        <scene sceneID="9XT-6Y-LHV">
+            <objects>
+                <viewController id="09c-5R-lWE" customClass="GlanceViewController" customModule="Example" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0zt-gC-Lu3"/>
+                        <viewControllerLayoutGuide type="bottom" id="AI6-zk-7Li"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TCd-8k-w42">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Oz-VM-MMO">
+                                <rect key="frame" x="50" y="114" width="924" height="604"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pge-RY-cnZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="924" height="604"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star_Group" translatesAutoresizingMaskIntoConstraints="NO" id="dxj-oA-qEW">
+                                        <rect key="frame" x="750" y="5" width="174" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Aof-Fb-grq"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Pge-RY-cnZ" secondAttribute="bottom" id="06Y-A9-25h"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pge-RY-cnZ" secondAttribute="trailing" id="Blr-Jc-I2H"/>
+                                    <constraint firstItem="Pge-RY-cnZ" firstAttribute="top" secondItem="7Oz-VM-MMO" secondAttribute="top" id="gSr-4p-Wm5"/>
+                                    <constraint firstAttribute="trailing" secondItem="dxj-oA-qEW" secondAttribute="trailing" id="hNN-DI-y9J"/>
+                                    <constraint firstItem="dxj-oA-qEW" firstAttribute="top" secondItem="7Oz-VM-MMO" secondAttribute="top" constant="5" id="tfF-Ex-QlS"/>
+                                    <constraint firstItem="Pge-RY-cnZ" firstAttribute="leading" secondItem="7Oz-VM-MMO" secondAttribute="leading" id="uaM-zi-OD1"/>
+                                    <constraint firstItem="dxj-oA-qEW" firstAttribute="leading" secondItem="7Oz-VM-MMO" secondAttribute="leading" constant="750" id="wdf-bZ-wR0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Oz-VM-MMO" secondAttribute="trailing" constant="50" id="5Jo-Vf-aKG"/>
+                            <constraint firstItem="7Oz-VM-MMO" firstAttribute="top" secondItem="0zt-gC-Lu3" secondAttribute="bottom" constant="50" id="IUK-Th-i4N"/>
+                            <constraint firstItem="AI6-zk-7Li" firstAttribute="top" secondItem="7Oz-VM-MMO" secondAttribute="bottom" constant="50" id="OcQ-0E-Ebw"/>
+                            <constraint firstItem="7Oz-VM-MMO" firstAttribute="leading" secondItem="TCd-8k-w42" secondAttribute="leading" constant="50" id="R6s-wT-eQC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ndB-Qv-igi"/>
+                    <connections>
+                        <outlet property="glanceImageView" destination="Pge-RY-cnZ" id="TLc-J8-Dyh"/>
+                        <outlet property="glanceView" destination="7Oz-VM-MMO" id="8Rp-q7-ziC"/>
+                        <outlet property="ratingImageView" destination="dxj-oA-qEW" id="Iae-vM-oip"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uDy-2X-ojv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="543" y="-1179"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Star_Group" width="154" height="33"/>
+    </resources>
 </document>

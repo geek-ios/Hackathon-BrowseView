@@ -9,7 +9,7 @@
 import SpriteKit
 import Magnetic
 
-class ViewController: UIViewController, MagneticDelegate {
+class HomeViewController: UIViewController, MagneticDelegate {
 
   
   @IBOutlet weak var magneticView: MagneticView! {
@@ -68,6 +68,16 @@ class ViewController: UIViewController, MagneticDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+//    magneticView.isHidden = true
+//    magneticView2.isHidden = true
+//    magneticView3.isHidden = true
+//    magneticView4.isHidden = true
+    
+//    magneticView.frame = CGRect(x: -40,y: 50, width: 300,height: 300)
+//    magneticView2.frame = CGRect(x: -40, y: (magneticView.frame.origin.y + magneticView.frame.size.width) + 10, width: 300,height: 300)
+//    magneticView3.frame = CGRect(x: (self.magneticView.frame.origin.x + self.magneticView.frame.size.width) + 10,y: magneticView.frame.origin.y, width: 300,height:300)
+//    magneticView4.frame = CGRect(x: (self.magneticView.frame.origin.x + self.magneticView.frame.size.width) + 10,y: magneticView.frame.origin.y, width: 300,height: 300)
+    
     magneticView.makeCircular()
     magneticView2.makeCircular()
     magneticView3.makeCircular()
@@ -76,6 +86,17 @@ class ViewController: UIViewController, MagneticDelegate {
     for _ in 0..<8 {
       add(nil)
     }
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    UIView.animate(withDuration: 0.5, animations: {
+      
+    })
+    
+//    UIView.animate(withDuration: <#T##TimeInterval#>, animations: <#T##() -> Void#>)
+//    
+//    UIView.animate(withDuration: <#T##TimeInterval#>, delay: <#T##TimeInterval#>, options: <#T##UIViewAnimationOptions#>, animations: //, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
   }
   
   @IBAction func add(_ sender: UIControl?) {
