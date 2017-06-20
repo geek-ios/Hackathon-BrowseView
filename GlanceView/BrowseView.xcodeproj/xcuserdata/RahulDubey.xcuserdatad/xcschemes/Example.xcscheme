@@ -17,7 +17,7 @@
                BlueprintIdentifier = "8B6914C91E70F6B50007896C"
                BuildableName = "Example.app"
                BlueprintName = "Example"
-               ReferencedContainer = "container:Magnetic.xcodeproj">
+               ReferencedContainer = "container:BrowseView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "8B6914C91E70F6B50007896C"
             BuildableName = "Example.app"
             BlueprintName = "Example"
-            ReferencedContainer = "container:Magnetic.xcodeproj">
+            ReferencedContainer = "container:BrowseView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "8B6914C91E70F6B50007896C"
             BuildableName = "Example.app"
             BlueprintName = "Example"
-            ReferencedContainer = "container:Magnetic.xcodeproj">
+            ReferencedContainer = "container:BrowseView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "8B6914C91E70F6B50007896C"
             BuildableName = "Example.app"
             BlueprintName = "Example"
-            ReferencedContainer = "container:Magnetic.xcodeproj">
+            ReferencedContainer = "container:BrowseView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

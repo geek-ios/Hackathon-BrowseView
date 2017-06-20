@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Magnetic.xcodeproj">
+      location = "self:/Users/RahulDubey/Documents/Samples/Hackathon/GlanceView/BrowseView.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2IC-3j-o0d">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="GKl-HO-NH8">
+            <objects>
+                <viewController id="2IC-3j-o0d" customClass="InitialViewController" customModule="BrowseView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iTm-GN-vf8"/>
+                        <viewControllerLayoutGuide type="bottom" id="zkb-bl-2CL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k1e-cn-tQU">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w2M-Id-a1A" customClass="MagneticView" customModule="Magnetic">
+                                <rect key="frame" x="220" y="70" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjY-cf-TUs">
+                                        <rect key="frame" x="82.5" y="120.5" width="135.5" height="59.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="1" green="0.1382009048" blue="0.1319838565" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="BYL-77-NpS"/>
+                                    <constraint firstItem="AjY-cf-TUs" firstAttribute="centerY" secondItem="w2M-Id-a1A" secondAttribute="centerY" id="Iuf-Fi-T3j"/>
+                                    <constraint firstItem="AjY-cf-TUs" firstAttribute="centerX" secondItem="w2M-Id-a1A" secondAttribute="centerX" id="cx6-NN-ftZ"/>
+                                    <constraint firstAttribute="width" constant="300" id="fY4-Rp-tkB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyJ-Ez-cHf" customClass="MagneticView" customModule="Magnetic">
+                                <rect key="frame" x="570" y="70" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVo-vR-Goq">
+                                        <rect key="frame" x="77.5" y="120.5" width="145.5" height="59.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="1" green="0.1382009048" blue="0.1319838565" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="DcP-Ka-goJ"/>
+                                    <constraint firstAttribute="height" constant="300" id="GKn-Pd-7R5"/>
+                                    <constraint firstItem="jVo-vR-Goq" firstAttribute="centerX" secondItem="jyJ-Ez-cHf" secondAttribute="centerX" id="aUL-wp-DKw"/>
+                                    <constraint firstItem="jVo-vR-Goq" firstAttribute="centerY" secondItem="jyJ-Ez-cHf" secondAttribute="centerY" id="z4T-kQ-Ih5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4FQ-IV-cur" customClass="MagneticView" customModule="Magnetic">
+                                <rect key="frame" x="220" y="430" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrR-oQ-3KC">
+                                        <rect key="frame" x="77.5" y="120.5" width="145.5" height="59.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="1" green="0.1382009048" blue="0.1319838565" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WrR-oQ-3KC" firstAttribute="centerX" secondItem="4FQ-IV-cur" secondAttribute="centerX" id="5PX-7j-B59"/>
+                                    <constraint firstAttribute="width" constant="300" id="fQ5-wy-BL6"/>
+                                    <constraint firstItem="WrR-oQ-3KC" firstAttribute="centerY" secondItem="4FQ-IV-cur" secondAttribute="centerY" id="ltN-9p-HwR"/>
+                                    <constraint firstAttribute="height" constant="300" id="ucc-0b-OLV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XP5-A4-9A7" customClass="MagneticView" customModule="Magnetic">
+                                <rect key="frame" x="570" y="430" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6E-5a-K3R">
+                                        <rect key="frame" x="101.5" y="120.5" width="97.5" height="59.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="1" green="0.1382009048" blue="0.1319838565" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="o6E-5a-K3R" firstAttribute="centerX" secondItem="XP5-A4-9A7" secondAttribute="centerX" id="GZv-BJ-XUG"/>
+                                    <constraint firstAttribute="height" constant="300" id="a99-vk-Vql"/>
+                                    <constraint firstAttribute="width" constant="300" id="g0k-Fc-cds"/>
+                                    <constraint firstItem="o6E-5a-K3R" firstAttribute="centerY" secondItem="XP5-A4-9A7" secondAttribute="centerY" id="xVP-LE-sfU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XP5-A4-9A7" firstAttribute="leading" secondItem="4FQ-IV-cur" secondAttribute="trailing" constant="50" id="DUI-qc-wh5"/>
+                            <constraint firstItem="w2M-Id-a1A" firstAttribute="top" secondItem="jyJ-Ez-cHf" secondAttribute="top" id="GJZ-EE-8gK"/>
+                            <constraint firstItem="4FQ-IV-cur" firstAttribute="leading" secondItem="w2M-Id-a1A" secondAttribute="leading" id="LhQ-eN-22e"/>
+                            <constraint firstItem="w2M-Id-a1A" firstAttribute="leading" secondItem="k1e-cn-tQU" secondAttribute="leadingMargin" constant="200" id="MwC-dI-F10"/>
+                            <constraint firstItem="4FQ-IV-cur" firstAttribute="top" secondItem="w2M-Id-a1A" secondAttribute="bottom" constant="60" id="fWk-ff-00Z"/>
+                            <constraint firstItem="jyJ-Ez-cHf" firstAttribute="leading" secondItem="w2M-Id-a1A" secondAttribute="trailing" constant="50" id="fbX-34-OYM"/>
+                            <constraint firstItem="w2M-Id-a1A" firstAttribute="top" secondItem="iTm-GN-vf8" secondAttribute="bottom" constant="50" id="niE-6R-ihK"/>
+                            <constraint firstItem="jyJ-Ez-cHf" firstAttribute="trailing" secondItem="XP5-A4-9A7" secondAttribute="trailing" id="pAA-FG-F6I"/>
+                            <constraint firstItem="XP5-A4-9A7" firstAttribute="top" secondItem="jyJ-Ez-cHf" secondAttribute="bottom" constant="60" id="v6A-wY-0Es"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="magneticView" destination="w2M-Id-a1A" id="Pbc-lB-Ugs"/>
+                        <outlet property="magneticView2" destination="jyJ-Ez-cHf" id="9io-ey-L0K"/>
+                        <outlet property="magneticView3" destination="4FQ-IV-cur" id="LGO-Dx-qLh"/>
+                        <outlet property="magneticView4" destination="XP5-A4-9A7" id="rem-i8-aUp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZZ-oO-8vp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71" y="-241"/>
+        </scene>
+    </scenes>
+</document>

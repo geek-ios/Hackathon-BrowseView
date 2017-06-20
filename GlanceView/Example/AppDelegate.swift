@@ -1,10 +1,12 @@
+
 //
-//  AppDelegate.swift
-//  Example
+//  ViewController.swift
+//  BubbleView
 //
-//  Created by Lasha Efremidze on 3/8/17.
-//  Copyright © 2017 efremidze. All rights reserved.
+//  Created by Rahul Dubey on 6/19/17.
+//  Copyright © 2017 Rahul Dubey. All rights reserved.
 //
+
 
 import UIKit
 

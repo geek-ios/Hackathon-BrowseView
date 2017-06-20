@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		71835A711EC44BC100782066 /* SKMultilineLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71835A701EC44BC100782066 /* SKMultilineLabelNode.swift */; };
-		8B103C641E88AFA200CC83E2 /* Magnetic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6914BB1E70F6A90007896C /* Magnetic.framework */; };
-		8B103C651E88AFA200CC83E2 /* Magnetic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6914BB1E70F6A90007896C /* Magnetic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B103C641E88AFA200CC83E2 /* BrowseView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6914BB1E70F6A90007896C /* BrowseView.framework */; };
+		8B103C651E88AFA200CC83E2 /* BrowseView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6914BB1E70F6A90007896C /* BrowseView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8B170CF71E8B2858005F45AB /* SFDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B170CE21E8B2858005F45AB /* SFDisplay-Black.otf */; };
 		8B170CF81E8B2858005F45AB /* SFDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B170CE31E8B2858005F45AB /* SFDisplay-Bold.otf */; };
 		8B170CF91E8B2858005F45AB /* SFDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B170CE41E8B2858005F45AB /* SFDisplay-Heavy.otf */; };
@@ -33,15 +33,19 @@
 		8B170D0B1E8B2858005F45AB /* SFText-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B170CF61E8B2858005F45AB /* SFText-SemiboldItalic.otf */; };
 		8B170D0E1E8B2FAD005F45AB /* MagneticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B170D0C1E8B2F60005F45AB /* MagneticView.swift */; };
 		8B61070C1E876D13000FF664 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B61070B1E876D13000FF664 /* Node.swift */; };
-		8B6107141E8771A5000FF664 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6107131E8771A5000FF664 /* Extensions.swift */; };
 		8B6914C01E70F6A90007896C /* Magnetic.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B6914BE1E70F6A90007896C /* Magnetic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B6914CD1E70F6B50007896C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6914CC1E70F6B50007896C /* AppDelegate.swift */; };
-		8B6914CF1E70F6B50007896C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6914CE1E70F6B50007896C /* ViewController.swift */; };
+		8B6914CF1E70F6B50007896C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6914CE1E70F6B50007896C /* InitialViewController.swift */; };
 		8B6914D21E70F6B50007896C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6914D01E70F6B50007896C /* Main.storyboard */; };
 		8B6914D41E70F6B50007896C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B6914D31E70F6B50007896C /* Assets.xcassets */; };
 		8B6914D71E70F6B50007896C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6914D51E70F6B50007896C /* LaunchScreen.storyboard */; };
 		8B6914DD1E70F6CF0007896C /* Magnetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6914DC1E70F6CF0007896C /* Magnetic.swift */; };
-		8B6AA4721E873E1700909A36 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6AA4711E873E1700909A36 /* Extensions.swift */; };
+		BBFAE8D21EF9714C00C2F2B4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFAE8D11EF9714C00C2F2B4 /* Extensions.swift */; };
+		BBFAE8D41EF9715700C2F2B4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFAE8D11EF9714C00C2F2B4 /* Extensions.swift */; };
+		BBFAE8F21EF978A400C2F2B4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFAE8F11EF978A400C2F2B4 /* FirstViewController.swift */; };
+		BBFAE8F31EF978A400C2F2B4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFAE8F11EF978A400C2F2B4 /* FirstViewController.swift */; };
+		BBFAE8F61EF9793500C2F2B4 /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBFAE8F41EF9793500C2F2B4 /* Initial.storyboard */; };
+		BBFAE8F71EF9793500C2F2B4 /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBFAE8F41EF9793500C2F2B4 /* Initial.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +65,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8B103C651E88AFA200CC83E2 /* Magnetic.framework in Embed Frameworks */,
+				8B103C651E88AFA200CC83E2 /* BrowseView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,19 +97,20 @@
 		8B170CF61E8B2858005F45AB /* SFText-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFText-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		8B170D0C1E8B2F60005F45AB /* MagneticView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagneticView.swift; sourceTree = "<group>"; };
 		8B61070B1E876D13000FF664 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
-		8B6107131E8771A5000FF664 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		8B6914BB1E70F6A90007896C /* Magnetic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Magnetic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6914BB1E70F6A90007896C /* BrowseView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BrowseView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6914BE1E70F6A90007896C /* Magnetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Magnetic.h; sourceTree = "<group>"; };
 		8B6914BF1E70F6A90007896C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B6914CA1E70F6B50007896C /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6914CA1E70F6B50007896C /* BrowseView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowseView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6914CC1E70F6B50007896C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B6914CE1E70F6B50007896C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B6914CE1E70F6B50007896C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitialViewController.swift; path = Example/InitialViewController.swift; sourceTree = "<group>"; };
 		8B6914D11E70F6B50007896C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8B6914D31E70F6B50007896C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B6914D31E70F6B50007896C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Example/Assets.xcassets; sourceTree = "<group>"; };
 		8B6914D61E70F6B50007896C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8B6914D81E70F6B50007896C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6914D81E70F6B50007896C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Example/Info.plist; sourceTree = "<group>"; };
 		8B6914DC1E70F6CF0007896C /* Magnetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Magnetic.swift; sourceTree = "<group>"; };
-		8B6AA4711E873E1700909A36 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BBFAE8D11EF9714C00C2F2B4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Example/Extensions.swift; sourceTree = "<group>"; };
+		BBFAE8F11EF978A400C2F2B4 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		BBFAE8F51EF9793500C2F2B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Example/Base.lproj/Initial.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B103C641E88AFA200CC83E2 /* Magnetic.framework in Frameworks */,
+				8B103C641E88AFA200CC83E2 /* BrowseView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,14 +157,19 @@
 				8B170CF51E8B2858005F45AB /* SFText-Semibold.otf */,
 				8B170CF61E8B2858005F45AB /* SFText-SemiboldItalic.otf */,
 			);
-			path = Fonts;
+			name = Fonts;
+			path = Example/Fonts;
 			sourceTree = "<group>";
 		};
 		8B6914B11E70F6A90007896C = {
 			isa = PBXGroup;
 			children = (
+				BBFAE8F81EF9794D00C2F2B4 /* Old Files */,
+				BBFAE8D51EF9722100C2F2B4 /* Extensions */,
+				8B6914CB1E70F6B50007896C /* Source Code */,
+				BBFAE8CF1EF96DDF00C2F2B4 /* Resources */,
+				BBFAE8CE1EF96DC700C2F2B4 /* UI  */,
 				8B6914BD1E70F6A90007896C /* Magnetic */,
-				8B6914CB1E70F6B50007896C /* Example */,
 				8B6914BC1E70F6A90007896C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -167,8 +177,8 @@
 		8B6914BC1E70F6A90007896C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B6914BB1E70F6A90007896C /* Magnetic.framework */,
-				8B6914CA1E70F6B50007896C /* Example.app */,
+				8B6914BB1E70F6A90007896C /* BrowseView.framework */,
+				8B6914CA1E70F6B50007896C /* BrowseView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,7 +186,6 @@
 		8B6914BD1E70F6A90007896C /* Magnetic */ = {
 			isa = PBXGroup;
 			children = (
-				8B6107131E8771A5000FF664 /* Extensions.swift */,
 				8B6914BF1E70F6A90007896C /* Info.plist */,
 				8B6914BE1E70F6A90007896C /* Magnetic.h */,
 				8B6914DC1E70F6CF0007896C /* Magnetic.swift */,
@@ -188,19 +197,50 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		8B6914CB1E70F6B50007896C /* Example */ = {
+		8B6914CB1E70F6B50007896C /* Source Code */ = {
 			isa = PBXGroup;
 			children = (
 				8B6914CC1E70F6B50007896C /* AppDelegate.swift */,
-				8B6914CE1E70F6B50007896C /* ViewController.swift */,
-				8B6AA4711E873E1700909A36 /* Extensions.swift */,
+				BBFAE8F11EF978A400C2F2B4 /* FirstViewController.swift */,
+			);
+			name = "Source Code";
+			path = Example;
+			sourceTree = "<group>";
+		};
+		BBFAE8CE1EF96DC700C2F2B4 /* UI  */ = {
+			isa = PBXGroup;
+			children = (
 				8B6914D01E70F6B50007896C /* Main.storyboard */,
-				8B6914D31E70F6B50007896C /* Assets.xcassets */,
 				8B6914D51E70F6B50007896C /* LaunchScreen.storyboard */,
+			);
+			name = "UI ";
+			sourceTree = "<group>";
+		};
+		BBFAE8CF1EF96DDF00C2F2B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B6914D31E70F6B50007896C /* Assets.xcassets */,
 				8B6914D81E70F6B50007896C /* Info.plist */,
 				8B170CE11E8B2858005F45AB /* Fonts */,
 			);
-			path = Example;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BBFAE8D51EF9722100C2F2B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BBFAE8D11EF9714C00C2F2B4 /* Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		BBFAE8F81EF9794D00C2F2B4 /* Old Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBFAE8F41EF9793500C2F2B4 /* Initial.storyboard */,
+				8B6914CE1E70F6B50007896C /* InitialViewController.swift */,
+			);
+			name = "Old Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,9 +257,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8B6914BA1E70F6A90007896C /* Magnetic */ = {
+		8B6914BA1E70F6A90007896C /* BrowseView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B6914C31E70F6A90007896C /* Build configuration list for PBXNativeTarget "Magnetic" */;
+			buildConfigurationList = 8B6914C31E70F6A90007896C /* Build configuration list for PBXNativeTarget "BrowseView" */;
 			buildPhases = (
 				8B6914B61E70F6A90007896C /* Sources */,
 				8B6914B71E70F6A90007896C /* Frameworks */,
@@ -230,9 +270,9 @@
 			);
 			dependencies = (
 			);
-			name = Magnetic;
+			name = BrowseView;
 			productName = Magnetic;
-			productReference = 8B6914BB1E70F6A90007896C /* Magnetic.framework */;
+			productReference = 8B6914BB1E70F6A90007896C /* BrowseView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8B6914C91E70F6B50007896C /* Example */ = {
@@ -251,7 +291,7 @@
 			);
 			name = Example;
 			productName = Example;
-			productReference = 8B6914CA1E70F6B50007896C /* Example.app */;
+			productReference = 8B6914CA1E70F6B50007896C /* BrowseView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -267,16 +307,15 @@
 					8B6914BA1E70F6A90007896C = {
 						CreatedOnToolsVersion = 8.2;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					8B6914C91E70F6B50007896C = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = NNRNHY2N8B;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = 8B6914B51E70F6A90007896C /* Build configuration list for PBXProject "Magnetic" */;
+			buildConfigurationList = 8B6914B51E70F6A90007896C /* Build configuration list for PBXProject "BrowseView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -289,7 +328,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8B6914BA1E70F6A90007896C /* Magnetic */,
+				8B6914BA1E70F6A90007896C /* BrowseView */,
 				8B6914C91E70F6B50007896C /* Example */,
 			);
 		};
@@ -300,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBFAE8F61EF9793500C2F2B4 /* Initial.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +360,7 @@
 				8B170D011E8B2858005F45AB /* SFText-BoldItalic.otf in Resources */,
 				8B170CFA1E8B2858005F45AB /* SFDisplay-Light.otf in Resources */,
 				8B170D051E8B2858005F45AB /* SFText-LightItalic.otf in Resources */,
+				BBFAE8F71EF9793500C2F2B4 /* Initial.storyboard in Resources */,
 				8B170D061E8B2858005F45AB /* SFText-Medium.otf in Resources */,
 				8B170CF81E8B2858005F45AB /* SFDisplay-Bold.otf in Resources */,
 				8B6914D41E70F6B50007896C /* Assets.xcassets in Resources */,
@@ -342,8 +383,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B170D0E1E8B2FAD005F45AB /* MagneticView.swift in Sources */,
+				BBFAE8D21EF9714C00C2F2B4 /* Extensions.swift in Sources */,
 				8B6914DD1E70F6CF0007896C /* Magnetic.swift in Sources */,
-				8B6107141E8771A5000FF664 /* Extensions.swift in Sources */,
+				BBFAE8F21EF978A400C2F2B4 /* FirstViewController.swift in Sources */,
 				8B61070C1E876D13000FF664 /* Node.swift in Sources */,
 				71835A711EC44BC100782066 /* SKMultilineLabelNode.swift in Sources */,
 			);
@@ -353,9 +395,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B6914CF1E70F6B50007896C /* ViewController.swift in Sources */,
-				8B6AA4721E873E1700909A36 /* Extensions.swift in Sources */,
+				8B6914CF1E70F6B50007896C /* InitialViewController.swift in Sources */,
 				8B6914CD1E70F6B50007896C /* AppDelegate.swift in Sources */,
+				BBFAE8D41EF9715700C2F2B4 /* Extensions.swift in Sources */,
+				BBFAE8F31EF978A400C2F2B4 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +407,7 @@
 /* Begin PBXTargetDependency section */
 		8B103C671E88AFA200CC83E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8B6914BA1E70F6A90007896C /* Magnetic */;
+			target = 8B6914BA1E70F6A90007896C /* BrowseView */;
 			targetProxy = 8B103C661E88AFA200CC83E2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -376,6 +419,7 @@
 				8B6914D11E70F6B50007896C /* Base */,
 			);
 			name = Main.storyboard;
+			path = Example;
 			sourceTree = "<group>";
 		};
 		8B6914D51E70F6B50007896C /* LaunchScreen.storyboard */ = {
@@ -384,6 +428,15 @@
 				8B6914D61E70F6B50007896C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = Example;
+			sourceTree = "<group>";
+		};
+		BBFAE8F41EF9793500C2F2B4 /* Initial.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBFAE8F51EF9793500C2F2B4 /* Base */,
+			);
+			name = Initial.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,6 +486,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = BrowseView;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -479,6 +533,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BrowseView;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,7 +556,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.efremidze.Magnetic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.BrowseView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -522,7 +577,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.efremidze.Magnetic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.BrowseView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -534,12 +589,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NNRNHY2N8B;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.efremidze.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hackathon.Example;
+				PRODUCT_MODULE_NAME = BrowseView;
+				PRODUCT_NAME = BrowseView;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -548,19 +605,21 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NNRNHY2N8B;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.efremidze.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hackathon.Example;
+				PRODUCT_MODULE_NAME = BrowseView;
+				PRODUCT_NAME = BrowseView;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8B6914B51E70F6A90007896C /* Build configuration list for PBXProject "Magnetic" */ = {
+		8B6914B51E70F6A90007896C /* Build configuration list for PBXProject "BrowseView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B6914C11E70F6A90007896C /* Debug */,
@@ -569,7 +628,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B6914C31E70F6A90007896C /* Build configuration list for PBXNativeTarget "Magnetic" */ = {
+		8B6914C31E70F6A90007896C /* Build configuration list for PBXNativeTarget "BrowseView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B6914C41E70F6A90007896C /* Debug */,

@@ -1,16 +1,19 @@
 //
 //  ViewController.swift
-//  Example
+//  BubbleView
 //
-//  Created by Lasha Efremidze on 3/8/17.
-//  Copyright © 2017 efremidze. All rights reserved.
+//  Created by Rahul Dubey on 6/19/17.
+//  Copyright © 2017 Rahul Dubey. All rights reserved.
 //
+
 
 import SpriteKit
 import Magnetic
+import UIKit
 
-class ViewController: UIViewController, MagneticDelegate {
+//Use Magnetic Delegate to get the selection and deselection.
 
+class InitialViewController: UIViewController, MagneticDelegate {
   
   @IBOutlet weak var magneticView: MagneticView! {
     didSet {
@@ -68,10 +71,10 @@ class ViewController: UIViewController, MagneticDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    magneticView.makeCircular()
-    magneticView2.makeCircular()
-    magneticView3.makeCircular()
-    magneticView4.makeCircular()
+//    magneticView.makeCircular()
+//    magneticView2.makeCircular()
+//    magneticView3.makeCircular()
+//    magneticView4.makeCircular()
     
     for _ in 0..<8 {
       add(nil)
@@ -130,5 +133,11 @@ extension UIView {
   func makeCircular() {
     self.layer.cornerRadius = min(self.frame.size.height, self.frame.size.width) / 2.0
     self.clipsToBounds = true
+  }
+}
+
+extension CGFloat {
+  static func random(_ lower: CGFloat = 0, _ upper: CGFloat = 1) -> CGFloat {
+    return CGFloat(Float(arc4random()) / Float(UINT32_MAX)) * (upper - lower) + lower
   }
 }

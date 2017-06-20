@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8B6914BA1E70F6A90007896C"
-               BuildableName = "Magnetic.framework"
-               BlueprintName = "Magnetic"
-               ReferencedContainer = "container:Magnetic.xcodeproj">
+               BuildableName = "BrowseView.framework"
+               BlueprintName = "BrowseView"
+               ReferencedContainer = "container:BrowseView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8B6914BA1E70F6A90007896C"
-            BuildableName = "Magnetic.framework"
-            BlueprintName = "Magnetic"
-            ReferencedContainer = "container:Magnetic.xcodeproj">
+            BuildableName = "BrowseView.framework"
+            BlueprintName = "BrowseView"
+            ReferencedContainer = "container:BrowseView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8B6914BA1E70F6A90007896C"
-            BuildableName = "Magnetic.framework"
-            BlueprintName = "Magnetic"
-            ReferencedContainer = "container:Magnetic.xcodeproj">
+            BuildableName = "BrowseView.framework"
+            BlueprintName = "BrowseView"
+            ReferencedContainer = "container:BrowseView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
